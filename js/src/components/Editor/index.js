@@ -21,7 +21,7 @@ import classNames from 'classnames';
 import ModalHandler from '../../event-handler/modals';
 import KeyDownHandler from '../../event-handler/keyDown';
 import SuggestionHandler from '../../event-handler/suggestions';
-import blockStyleFn from '../../utils/BlockStyle';
+import blockStyleFn from '../../Utils/BlockStyle';
 import { mergeRecursive } from '../../utils/toolbar';
 import InlineControl from '../InlineControl';
 import BlockControl from '../BlockControl';
@@ -36,7 +36,6 @@ import EmbeddedControl from '../EmbeddedControl';
 import EmojiControl from '../EmojiControl';
 import ImageControl from '../ImageControl';
 import HistoryControl from '../HistoryControl';
-import LinkDecorator from '../../decorators/Link';
 import MentionDecorator from '../../decorators/Mention';
 import BlockRendererFunc from '../../renderer';
 import defaultToolbar from '../../config/defaultToolbar';
@@ -75,7 +74,7 @@ export default class WysiwygEditor extends Component {
 
   componentWillMount(): void {
     let editorState;
-    const decorators = [LinkDecorator];
+    const decorators = [];
     this.modalHandler = new ModalHandler();
     if (this.props.mention) {
       MentionDecorator.setConfig({

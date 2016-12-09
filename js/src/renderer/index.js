@@ -1,6 +1,6 @@
 import { Entity, ContentBlock } from 'draft-js';
 import Embedded from './Embedded';
-import Image from './Image';
+import Image from '../Renderer/Image';
 
 export default function BlockRendererFunc(block: ContentBlock): Object {
   if (block.getType() === 'atomic') {
