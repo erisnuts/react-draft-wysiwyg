@@ -186,6 +186,7 @@ export default class WysiwygEditor extends Component {
       if (this.props.onChange) {
         let editorContent = convertToRaw(this.state.editorState.getCurrentContent());
         editorContent = this.enrichData(editorContent);
+        console.log('afterChange:', this.props.onChange, editorContent);
         this.props.onChange(editorContent);
       }
     });

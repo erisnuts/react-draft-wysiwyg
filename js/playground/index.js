@@ -7,7 +7,7 @@ import draftToMarkdown from 'draftjs-to-markdown'; // eslint-disable-line import
 import {
   convertFromHTML,
   convertToRaw,
-  ContentState,
+  ContentState
 } from 'draft-js';
 import { Editor } from '../src';
 import styles from './styles.css'; // eslint-disable-line no-unused-vars
