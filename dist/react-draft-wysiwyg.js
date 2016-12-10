@@ -1448,9 +1448,6 @@ module.exports =
 	    _this.onChange = function (editorState) {
 	      var readOnly = _this.props.readOnly;
 	
-	
-	      debugger;
-	
 	      if (!readOnly) {
 	        _this.setState({
 	          editorState: editorState

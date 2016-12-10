@@ -149,9 +149,6 @@ export default class WysiwygEditor extends Component {
 
   onChange: Function = (editorState: Object): void => {
     const { readOnly } = this.props;
-
-    debugger;
-
     if (!readOnly) {
       this.setState({
         editorState,
